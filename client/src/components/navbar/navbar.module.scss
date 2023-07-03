@@ -1,0 +1,72 @@
+.aside {
+  width: 400px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+
+  .nav {
+    width: 100%;
+    padding: 30px 15px;
+    border: 1px solid black;
+    background-color: pink;
+
+    .navList {
+      display: flex;
+      justify-content: space-between;
+
+      .navbarBtn {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 2px 3px;
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+
+        &:hover {
+          border-radius: 15px;
+          background-color: grey;
+        }
+
+        .navbarImg {
+          margin-right: 5px;
+          width: 35px;
+          height: 35px;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+
+  .asideBlock {
+    background-color: grey;
+    flex: 1;
+
+    .asideBlockHeader {
+      padding: 10px 30px;
+
+      .asideList {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        .asideListBtn {
+          font-size: 18px;
+          font-weight: bold;
+          list-style-type: none;
+          cursor: pointer;
+          color: white;
+        }
+
+        .asideListActiveBtn {
+          font-size: 18px;
+          font-weight: bold;
+          list-style-type: none;
+          cursor: pointer;
+          color: white;
+          border-bottom: 3px solid pink;
+        }
+      }
+    }
+  }
+}
