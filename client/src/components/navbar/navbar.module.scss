@@ -41,32 +41,5 @@
   .asideBlock {
     background-color: grey;
     flex: 1;
-
-    .asideBlockHeader {
-      padding: 10px 30px;
-
-      .asideList {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-
-        .asideListBtn {
-          font-size: 18px;
-          font-weight: bold;
-          list-style-type: none;
-          cursor: pointer;
-          color: white;
-        }
-
-        .asideListActiveBtn {
-          font-size: 18px;
-          font-weight: bold;
-          list-style-type: none;
-          cursor: pointer;
-          color: white;
-          border-bottom: 3px solid pink;
-        }
-      }
-    }
   }
 }

@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import styles from './navbar.module.scss';
 
-const Navbar = () => {
+const Navbar = ({ children }) => {
   return (
     <aside className={styles.aside}>
       <nav className={styles.nav}>
@@ -19,15 +19,7 @@ const Navbar = () => {
           </Link>
         </ul>
       </nav>
-      <div className={styles.asideBlock}>
-        <div className={styles.asideBlockHeader}>
-          <ul className={styles.asideList}>
-            <li className={styles.asideListBtn}>Couples</li>
-            <li className={styles.asideListActiveBtn}>Notification</li>
-          </ul>
-        </div>
-        <div className={styles.asideBlockMain}></div>
-      </div>
+      <div className={styles.asideBlock}>{children}</div>
     </aside>
   );
 };

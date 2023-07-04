@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
-import { Chat, Home, Login, Signup, Welcome, Onboarding } from './pages/';
+import { Chat, Home, Login, Signup, Welcome, Onboard } from './pages/';
 
 const App = () => {
   return (
@@ -10,7 +10,7 @@ const App = () => {
         <Route path="/signup" element={<Signup />} />
         <Route path="/welcome" element={<Welcome />} />
         <Route path="/chat" element={<Chat />} />
-        <Route path="/onboarding" element={<Onboarding />} />
+        <Route path="/onboard" element={<Onboard />} />
       </Routes>
     </>
   );

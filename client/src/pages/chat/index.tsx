@@ -1,10 +1,14 @@
-import { Navbar } from '../../components';
+import { Navbar, ChatItems } from '../../components';
 import styles from './chat.module.scss';
 
 const Chat = () => {
   return (
     <div className={styles.chat}>
-      <Navbar />
+      <Navbar>
+        <div className={styles.chatItems}>
+          <ChatItems />
+        </div>
+      </Navbar>
       <section className={styles.chatSection}>
         <div className={styles.chatHeader}>Name, age</div>
         <div className={styles.chatBlock}>
